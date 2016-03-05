@@ -1,0 +1,52 @@
+body {
+    background-color: #f2f2f2;
+    padding: 0 40px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.header li {
+    display: inline-block;
+    text-decoration: none;
+    width: 20%;
+    margin-right: -4px;
+}
+
+
+.header a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: darkgrey;
+}
+
+.menu img {
+    position: absolute;
+    left: 531px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
