@@ -1,28 +1,40 @@
 body {
-    background-color: #f2f2f2;
     padding: 0 40px;
     font-family: 'PT Sans', sans-serif;
+    background: #f2f2f2 url("../img/background.jpg") no-repeat 50% 0;;
 }
 
-.header {
-    position: relative;
+.header,
+.main-content,
+.footer {
     width: 1200px;
     padding: 0;
     margin: 0 auto;
+}
+
+/* Хедер, меню */
+
+.header {
+    position: relative;
     background-color: #ffffff;
 }
 
 .menu {
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
-.header li {
+
+.header .menu li {
     display: inline-block;
     text-decoration: none;
     width: 20%;
     margin-right: -4px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease-out;
 }
+
 
 
 .header a {
@@ -34,19 +46,420 @@ body {
     text-align: center;
 }
 
-.menu a:hover {
-    background-color: darkgrey;
+.menu li:hover {
+    background-color: #81b3d2;
+}
+
+.menu li:nth-child(4) a:hover{
+    background-color: white;
+    cursor: default;
 }
 
 .menu img {
     position: absolute;
+    top: 0;
     left: 531px;
 }
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    content: "";
-    clear: both;
-    height: 0;
+/* Основное содержание страницы */
+
+.main-content {
+    width: 1200px;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
 }
+
+.logo .hello {
+    margin-top: 76px;
+    height: 45px;
+    background: transparent url("../img/welcome.png") no-repeat 50% 0;
+    margin-bottom: 11px;
+}
+
+.logo .slogan {
+    height: 30px;
+    position: relative;
+    margin-bottom: 62px;
+}
+
+.logo .slogan img{
+    position: relative;
+    left: 513px;
+    z-index: 2;
+}
+
+.logo .slogan:before {
+    content: "";
+    
+    position: relative;
+    top: 13px;
+    left: 473px;
+    width: 29px;
+    
+    display: block;
+    border-bottom: 2px solid #838483;
+}
+
+.logo .slogan:after {
+    content: "";
+    
+    position: relative;
+    top: -23px;
+    left: 700px;
+    width: 29px;
+    
+    display: block;
+    border-bottom: 2px solid #838483;
+}
+
+.logo .title {
+    height: 79px;
+    background: transparent url("../img/title.png") no-repeat 50% 0;
+    margin-bottom: 58px;
+}
+
+.logo .slogan-title {
+    height: 80px;
+    background: transparent url("../img/slogan-title.png") no-repeat 50% 0;
+    margin-bottom: 24px;
+}
+
+.mask {
+    height: 58px;
+    background: url("../img/mask.png") no-repeat;
+    position: relative;
+}
+
+.mask div:first-child {
+    
+    position: relative;
+    top: 55px;
+    
+    width: 251px;
+    border-bottom: 1px solid #b88563;
+}
+
+.mask div:last-child {
+    position: relative;
+    top: 54px;
+    left: 952px;
+    
+    width: 251px;
+    border-bottom: 1px solid #b88563;
+}
+
+.cooler-than {
+    margin-top: -2px;
+    background-color: white;
+    padding-top: 65px;
+}
+
+.cooler-than p:first-child {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 40px;
+}
+
+.cooler-than p:last-child {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: grey;
+    padding-bottom: 55px;
+    margin-bottom: 0;
+}
+
+.true-city .features {
+    float:left;
+    
+    box-sizing: border-box;
+    width: 34%;
+    height: 256px;
+    
+    text-align: center;
+    color: white;
+    
+    padding: 30px 50px 30px 50px;
+    
+    background-color: #81b3d2;
+}
+
+.true-city .features-1-image {
+    float: right;
+    width: 66%;
+    height: 256px;
+    background: url("../img/image-1.jpg") no-repeat;
+}
+
+.bonus-features {
+    height: 330px;
+    background-color: white;
+}
+
+.bonus-features h2 {
+    text-align: center;
+    font-size: 21px;
+}
+
+.bonus-features p {
+    color: grey;
+}
+
+.bonus-features div {
+    box-sizing: border-box;
+    height: 330px;
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 0 30px;
+    padding-top: 150px;
+}
+
+.motel {
+    background: url("../img/house.png") no-repeat 50% 60px;
+}
+
+.food {
+    float:left;
+    width: 34%;
+    background: url("../img/food.png") no-repeat 50% 60px;
+}
+
+.no-chinize {
+    float:right;
+    background: url("../img/gift.png") no-repeat 50% 60px;
+}
+
+.bridge {
+    width: 100%;
+    height: 256px;
+    margin: 0;
+}
+
+.features-2-image {
+    float: left;
+    width: 66%;
+    height: 100%;
+    background: url("../img/bridge.png") no-repeat;
+}
+
+.features-2 {
+    float:right;
+    
+    box-sizing: border-box;
+    width: 34%;
+    height: 256px;
+    
+    text-align: center;
+    color: white;
+    
+    padding: 30px 50px 30px 50px;
+    
+    background-color: #81b3d2;
+}
+
+.features-345 {
+    height: 256px;
+    width: 100%;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.features-345 p {
+    color: grey;
+}
+
+.feature-3,
+.feature-4,
+.feature-5{
+    float:left;
+    
+    box-sizing: border-box;
+    width: 33%;
+    height: 256px;
+    
+    text-align: center;
+    color: black;
+    
+    padding: 30px 50px 30px 50px;
+    
+    background-color: #eeeeee;
+}
+
+.feature-4 {
+    width: 34%;
+}
+
+.feature-5 {
+    float:right;
+}
+
+.would-you {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 292px;
+    background-color: white;
+    padding-top: 55px;
+    position: relative;
+}
+
+.would-you h2,
+.would-you p {
+    text-align: center;
+}
+
+.would-you h2 {
+    font-size: 21px;
+}
+
+.would-you p {
+    color: grey;
+}
+
+.would-you .btn {
+    margin: 0 auto;
+    height: 86px;
+    width: 568px;
+    background-color: #766357;
+    position: absolute;
+    bottom: 0;
+    left: 316px;
+    color: white;
+    padding: 34px 0;
+    font-size: 16px;
+}
+
+.map {
+    height: 607px;
+    width: 100%;
+    background: url("../img/map.png") 50% -15px;
+}
+
+.search {
+    box-sizing: border-box;
+    width: 570px;
+    height: 395px;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-left: 35px;
+    padding-right: 55px;
+    
+}
+
+.search input[type="date"] {
+    box-sizing: border-box;
+    width: 346px;
+    margin-bottom: 30px;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+
+.search input:nth-child(2) {
+    margin-left: 14px;
+}
+
+.search input:nth-child(4) {
+    margin-left: 10px;
+}
+
+.search input[type="number"]{
+    box-sizing: border-box;
+    width: 100px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.search label:nth-child(7){
+    margin-left: 60px;
+}
+
+
+.search button {
+    box-sizing: border-box;
+    width: 470px;
+    height: 58px;
+    
+    margin-top: 55px;
+    
+    background-color: #81b3d2;
+    color: white;
+    outline: 0;
+}
+
+
+
+
+
+/* Далее - оформление футера */
+
+.footer {
+    width: 1200px;
+    height: 120px;
+    background-color: rgba(254, 254, 254, 0.9);
+    position: relative;
+    top: -120px;
+}
+
+.hesh,
+.social-btns,
+.copyright{
+    box-sizing: border-box;
+    width: 33%;
+    height: 100%;
+    float: left;
+    padding-top: 50px;
+}
+
+.footer .hesh {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+.social-btns {
+    width:34%;
+    
+    padding-top: 40px;
+}
+
+.tw-btn,
+.fb-btn,
+.youtube-btn {
+    display: inline-block;
+    position: relative;
+    left: 135px;
+    width: 46px;
+    height: 48px;
+}
+
+.tw-btn {
+    background: #81b3d2 url("../img/tw.gif") no-repeat 50% 50%;
+}
+
+.fb-btn {
+    background: #81b3d2 url("../img/fb.gif") no-repeat 50% 50%;
+}
+
+.youtube-btn {
+    background: #81b3d2 url("../img/youtube.gif") no-repeat 50% 50%;
+}
+
+.copyright {
+    float: right;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.copyright img {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+

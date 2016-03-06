@@ -3,20 +3,113 @@
     <head>
         <meta charset="utf-8">
         <title>Sedona</title>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <link href='https://fonts.googleapis.com/css?family=PT+Sans:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header class="header clearfix">
+        <header class="header clearfix"> <!-- Меню -->
             <ul class="menu">
                 <img src="img/logo.png">
-                <li><a href="/info" alt="Информация">ИНФОРМАЦИЯ</a></li>
+                <li><a class="active" href="/info" alt="Информация">ИНФОРМАЦИЯ</a></li>
                 <li><a href="/media" alt="Информация">ФОТО И ВИДЕО</a></li>
-                <li></li>
+                <li><a href="#"> </a></li>
                 <li><a href="/map" alt="Информация">КАРТА ШТАТА</a></li>
                 <li><a href="/motels" alt="Информация">ГОСТИНИЦЫ</a></li>
             </ul>
         </header>
+        <section class="main-content">
+                <div class="logo clearfix">
+                        <div class="hello"></div>
+                        <div class="slogan">
+                            <img src="img/slogan-hello.png">
+                        </div>
+                        <div class="title"></div>
+                        <div class="slogan-title"></div>
+                </div>
+                <div class="mask clearfix">
+                        <div></div>
+                        <div></div>
+                </div>
+                <div class="cooler-than clearfix">
+                        <p>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, <br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</p>
+                        <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+                </div>
+                <div class="true-city clearfix">
+                    <div class="features">
+                        <h2>НАСТОЯЩИЙ<br> ГОРОДОК</h2>
+                        <p>&mdash; №1 &mdash;</p>
+                        <p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,
+                        ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                    </div>
+                    <div class="features-1-image"></div>
+                </div> 
+                <div class="bonus-features">
+                    <div class="motel">
+                        <h2>ЖИЛЬЕ</h2>
+                        <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ. ВСЕ КАК В КИНО!</p>
+                    </div>
+                    <div class="food">
+                       <h2>ЕДА</h2>
+                       <p>ВСЕГДА ЗАКАЗЫВАЙ ФИРМЕННЫЙ БУРГЕР. ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                    </div>
+                    <div class="no-chinize">
+                        <h2>СУВЕНИРЫ</h2>
+                        <p>НЕ ТОЛЬКО КИТАЙСКОГО, <br> НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                    </div>
+                </div>
+                <div class="bridge clearfix">
+                    <div class="features-2-image"></div>
+                    <div class="features-2">
+                        <h2>ТАМ ЕСТЬ<br> МОСТ ДЬЯВОЛА</h2>
+                        <p>&mdash; №2 &mdash;</p>
+                        <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! <br> ЕСЛИ, КОНЕЧНО, ВЫ ОСМЕЛИТЕСЬ</p>
+                    </div>
+                </div> 
+                <div class="features-345">
+                    <div class="feature-3">
+                       <h2>НЕБОЛЬШАЯ<br> ПЛОЩАДЬ</h2>
+                        <p>&mdash; №3 &mdash;</p>
+                        <p>ВСЕ ДОСТОПРИМЕЧА-<br>ТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+                    </div>
+                    <div class="feature-4">
+                        <h2>КРАСИВАЯ<br> ДОРОГА</h2>
+                        <p>&mdash; №3 &mdash;</p>
+                        <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ <br> НЕ СКУЧНО</p>
+                    </div>
+                    <div class="feature-5">
+                        <h2>НЕБОЛЬШАЯ<br> ПЛОЩАДЬ</h2>
+                        <p>&mdash; №3 &mdash;</p>
+                        <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН<br>И ТОЛПИТСЯ ТАМ</p>
+                    </div>
+                </div>
+                <div class="would-you">
+                    <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+                    <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ <br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+                    <button class="btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+                </div>
+                <div class="map">
+                    <form class="search">
+                        <label for="date-arrive">ДАТА ЗАЕЗДА:</label>
+                        <input id="date-arrive" type="date" name="date-arrive" value="">
+                        <label for="date-exit">ДАТА ВЫЕЗДА:</label>
+                        <input id="date-exit" type="date" name="date-exit" value="">
+                        <label for="adult">ВЗРОСЛЫЕ:</label>
+                        <input id="adult" type="number" name="adult" value="2">
+                        <label for="children">ДЕТИ:</label>
+                        <input id="children" type="number" name="children" value="2">
+                        <button type="submit" name="form-data" value="">НАЙТИ</button>
+                    </form>
+                </div>
+        </section>    
+        <footer class="footer">
+            <div class="hesh">#VISITSEDONA</div>
+            <div class="social-btns">
+                <a class="tw-btn" href=""></a>
+                <a class="fb-btn" href=""></a>
+                <a class="youtube-btn" href=""></a>
+            </div>
+            <div class="copyright">WEBSITE BY <img src="img/htmlacademy.gif"> FOR <img src="img/bakalavr.gif"></div>
+        </footer>                  
     </body>
 </html>
