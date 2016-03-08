@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="clearfix">
         <header class="header clearfix"> <!-- Меню -->
             <ul class="menu">
                 <img src="img/logo.png">
@@ -51,7 +51,7 @@
                     </div>
                     <div class="food">
                        <h2>ЕДА</h2>
-                       <p>ВСЕГДА ЗАКАЗЫВАЙ ФИРМЕННЫЙ БУРГЕР. ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                       <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР. ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
                     </div>
                     <div class="no-chinize">
                         <h2>СУВЕНИРЫ</h2>
@@ -101,15 +101,22 @@
                         <button type="submit" name="form-data" value="">НАЙТИ</button>
                     </form>
                 </div>
-        </section>    
-        <footer class="footer">
-            <div class="hesh">#VISITSEDONA</div>
-            <div class="social-btns">
-                <a class="tw-btn" href=""></a>
-                <a class="fb-btn" href=""></a>
-                <a class="youtube-btn" href=""></a>
-            </div>
-            <div class="copyright">WEBSITE BY <img src="img/htmlacademy.gif"> FOR <img src="img/bakalavr.gif"></div>
-        </footer>                  
+                <footer class="footer">
+                    <div class="hesh">#VISITSEDONA</div>
+                    <div class="social-btns">
+                        <a class="tw-btn" href=""></a>
+                        <a class="fb-btn" href=""></a>
+                        <a class="youtube-btn" href=""></a>
+                    </div>
+                    <div class="copyright">WEBSITE BY <img src="img/htmlacademy.gif"> FOR <img src="img/bakalavr.gif"></div>
+                </footer>    
+                <script>
+                    var btn = document.querySelector(".btn");
+                    var popup = document.querySelector(".search");
+                    btn.addEventListener("click", function(event) {
+                        popup.classList.add("search-show");
+                    });
+                </script>
+        </section>                  
     </body>
 </html>

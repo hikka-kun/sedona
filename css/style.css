@@ -1,7 +1,7 @@
 body {
     padding: 0 40px;
     font-family: 'PT Sans', sans-serif;
-    background: #f2f2f2 url("../img/background.jpg") no-repeat 50% 0;;
+    background: #f2f2f2 url("../img/background.jpg") no-repeat 50% 0;
 }
 
 .header,
@@ -16,7 +16,6 @@ body {
 
 .header {
     position: relative;
-    background-color: #ffffff;
 }
 
 .menu {
@@ -346,9 +345,13 @@ body {
     background-color: white;
     margin: 0 auto;
     padding-top: 55px;
-    padding-left: 35px;
+    padding-left: 47px;
     padding-right: 55px;
-    
+    display: none;
+}
+
+.search-show {
+    display: block;
 }
 
 .search input[type="date"] {
@@ -400,11 +403,12 @@ body {
 /* Далее - оформление футера */
 
 .footer {
+    box-sizing: border-box;
     width: 1200px;
     height: 120px;
     background-color: rgba(254, 254, 254, 0.9);
-    position: relative;
-    top: -120px;
+    position: absolute;
+    bottom: 0;
 }
 
 .hesh,
@@ -422,6 +426,7 @@ body {
     font-size: 17px;
     font-weight: bold;
     color: black;
+    padding-top: 60px;
 }
 
 .social-btns {
